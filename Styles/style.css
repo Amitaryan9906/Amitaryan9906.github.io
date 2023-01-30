@@ -14,7 +14,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #21a1acf5;
+    background-color: #ffffffff;
     z-index: 1;
 }
 
@@ -24,14 +24,15 @@ body{
 .tabs{ 
     display: flex;
     justify-content: space-between;
-    width: 550px;
+    width: 60%;
     flex-direction:row;
     margin-right: 50px;
+    justify-content: space-between;
     align-items: center;
 }
-.tabs>div{
-    margin:20px;
-
+.tabs>*{
+    margin: auto;
+    font-size: 20px;
 }
 .contact{
     display: flex;
@@ -53,15 +54,22 @@ body{
 }
 .about_me{
   border: 1px solid black;
-  width: 100%;
+  display: flex;
+  width: auto;
   height:400px; 
   margin-top: 100px; 
+ align-items: center;
+ justify-content: space-around;
 }
+.about_me>p{
+    border: 1px solid rgb(116, 26, 26);
 
+}
 .about_me>img{
     width: 20%;
-    margin: auto;
-    margin-left: 20%;
+    height: auto;
+    border-radius: 4%;
+    border: none;
 }
 #footer {
     width: 100%;
