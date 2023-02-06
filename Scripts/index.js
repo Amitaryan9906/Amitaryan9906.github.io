@@ -1,15 +1,15 @@
-let skills=[{}];
+// let skills=[{}];
 
 
-// ------------------------------------------------------------------------
+// // ------------------------------------------------------------------------
 
-let aboutMe=document.querySelector(".about_me");
+let aboutMe=document.querySelector("#about");
 let msg=document.createElement("p");
 msg.innerHTML="HI THIS IS AMIT FULLSTACK WEB DEVELOPER"
 let picture=document.createElement("img");
 picture.src="iconAndImages/pic.png";
 aboutMe.append(msg,picture);
-console.log("hii");
+// console.log("hii");
 
 // let skill=document.createElement("div");
 // skill.className="skill";

@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 
-#navbar{
+#nav-menu{
     width: 100%;
     height: 80px;
     display: flex;
@@ -18,7 +18,7 @@ body{
     z-index: 1;
 }
 
-#navbar>:nth-child(1){
+#nav-menu>:nth-child(1){
     margin-left:20px;
 }
 .tabs{ 
@@ -34,7 +34,7 @@ body{
     margin: auto;
     font-size: 20px;
 }
-.contact{
+#contact{
     display: flex;
     align-items: center;
     text-align: center;
@@ -52,7 +52,7 @@ body{
 #home{
     height: 1800px;
 }
-.about_me{
+#about{
   border: 1px solid black;
   display: flex;
   width: auto;
@@ -61,11 +61,11 @@ body{
  align-items: center;
  justify-content: space-around;
 }
-.about_me>p{
+#about>p{
     border: 1px solid rgb(116, 26, 26);
 
 }
-.about_me>img{
+#about>img{
     width: 20%;
     height: auto;
     border-radius: 4%;
