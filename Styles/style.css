@@ -8,7 +8,6 @@ body{
     height: 80px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid lightgrey;
     align-items: center;
     position: relative;
     position: fixed;
@@ -56,21 +55,40 @@ body{
   border: 1px solid black;
   display: flex;
   width: auto;
-  height:400px; 
+  height:45%; 
   margin-top: 100px; 
  align-items: center;
  justify-content: space-around;
 }
-#about>p{
-    border: 1px solid rgb(116, 26, 26);
+#about>:nth-child(2){
+    height: 65%;
+    width: 20%;
+    margin: auto;
+
 
 }
-#about>img{
-    width: 20%;
+#about>:nth-child(1){
+    height: 65%;
+    width: 40%;
+    margin: auto;
+
+
+}
+#about>div>img{
+    width: 100%;
     height: auto;
-    border-radius: 4%;
+    border-radius: 50%;
     border: none;
 }
+#about>div:nth-child(1)>h2:nth-child(1){
+   font-size: 20px;
+}
+#about>div:nth-child(1)>h2:nth-child(2){
+    font-size: 80px;
+ }
+ #about>div:nth-child(1)>h2:nth-child(3){
+    font-size: 40px;
+ }
 #footer {
     width: 100%;
     height: 350px;
@@ -79,8 +97,34 @@ body{
     background-color: rgb(43, 134, 132);
 }
 
+.content{
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .contact .content a {
+    width: 32%; /* <--Line added on edit */
+    max-width: 32%;
+    display: block;
 
+  }
+  .contact a:nth-child(1) img {
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .contact a:nth-child(1){
+    margin-left: 50px;
+  }
+  .contact a:nth-child(2) img {
+    max-width: 80%;
+    height: 80%;
+    margin-top:5px;
+  }
+  #download-resume{
+ margin-left: 45%;
+ margin-top: 10px;
+  }
 /* For Tablet View */
 @media screen and (min-device-width: 450px)
 and (max-device-width: 780px) {
