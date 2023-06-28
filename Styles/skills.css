@@ -1,0 +1,72 @@
+#skills {
+    padding: 50px;
+    background-color: #092637;
+    margin: auto;
+}
+
+.skill-category {
+    margin-bottom: 30px;
+}
+
+.skill-category h3 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Use auto-fit and minmax for flexible columns */
+    grid-gap: 10px;
+}
+
+.skill-item {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(34, 74, 234, 0.1);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    flex-direction: column;
+    height: 110px;
+}
+.skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(75, 236, 50, 0.86);
+}
+
+.skill-item img {
+    height:90%;
+    width: auto;
+    margin-right: 5px;
+    border-radius: 3px;
+    padding-bottom: 5px;
+}
+
+
+/* For desktop */
+@media screen and (min-width: 1024px) {
+    .skill-list {
+        grid-template-columns: repeat(4, 1fr); /* Display 4 elements in a row */
+    }
+}
+
+/* For tablets */
+@media screen and (max-width: 1023px) {
+    .skill-list {
+        grid-template-columns: repeat(3, 1fr); /* Display 3 elements in a row */
+    }
+}
+
+/* For mobile */
+@media screen and (max-width: 767px) {
+    .skill-list {
+        grid-template-columns: repeat(2, 1fr); /* Display 2 elements in a row */
+    }
+}

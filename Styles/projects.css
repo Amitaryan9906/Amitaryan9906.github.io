@@ -1,0 +1,79 @@
+#projects {
+    padding: 50px;
+    background-color: #092637;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(15, 3, 56, 0.597);
+}
+
+.project div {
+    width: 45%;
+}
+
+.project:hover {
+    box-shadow: 0 2px 4px rgba(25, 96, 189, 0.86);
+}
+
+.project h2 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+.project img {
+    width: 90%;
+    transition: all 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project p {
+    margin-bottom: 50px;
+    color: #8892B0;
+
+}
+.project + a {
+   color: #fff;
+   border: 1px solid #13a324;
+   padding: 5px;
+   text-decoration: none;
+   border-radius: 5px;
+}
+.project-link {
+    text-decoration: none;
+    border:1px solid #13a324;
+    padding: 5px;
+    border-radius: 5px;
+    color: springgreen;
+}
+
+/* For mobile */
+@media screen and (max-width: 767px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project h2 {
+        font-size: 30px;
+    }
+
+    .project img {
+        width: 100%;
+    }
+    
+}

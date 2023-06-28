@@ -1,38 +1,68 @@
-body{
-    margin:0;
+body {
+    margin: 0;
     padding: 0;
+    /* color: #ffffff; Set the text color for night view */
+    background-color:#092637;
+    color: #ffffff;
+
 }
 
-#nav-menu{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #ffffffff;
-    z-index: 1;
+
+#nav-menu {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding-left: 2%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(8px);
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  color: #ffffff;
 }
 
-#nav-menu>:nth-child(1){
-    margin-left:20px;
+#nav-menu>div>img{
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
 }
-.tabs{ 
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    flex-direction:row;
-    margin-right: 50px;
-    justify-content: space-between;
-    align-items: center;
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  flex-direction: row;
+  margin-right: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
-.tabs>*{
-    margin: auto;
-    font-size: 20px;
+
+.tabs > * {
+  margin: auto;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ffffff; /* Add white color for tabs */
 }
+
+.tabs > *:hover {
+  transform: scale(1.1);
+}
+.nav-link-resume{
+  display: flex;
+  text-align: center;
+  
+  border: 1px solid rgb(6, 118, 75);
+  padding-left:20px;
+  width: 90px;
+  align-items: center;
+  border-radius:5px;
+}
+  
+  
 #contact{
     display: flex;
     align-items: center;
@@ -49,16 +79,42 @@ body{
     background-color:transparent;
 }
 #home{
-    height: 1800px;
+    height: auto;
 }
 #about{
-  border: 1px solid black;
   display: flex;
   width: auto;
   height:45%; 
   margin-top: 100px; 
  align-items: center;
  justify-content: space-around;
+}
+#about h2:nth-child(1){
+    border: 1px solid #ffffff;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left:7px;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px 20px 20px 0;
+    
+}
+#about h2:nth-child(1){
+    margin: 0%;
+    color: #64FFDA;
+}
+#about h2:nth-child(2){
+  margin: 0%;
+  color: #CDDAFF;
+}
+#about h2:nth-child(3){
+  margin: 0%;
+  color: #acbdecd6;
+}
+#about h2{
+  margin: 0%;
 }
 #about>:nth-child(2){
     height: 65%;
@@ -67,8 +123,8 @@ body{
 
 
 }
-#about>:nth-child(1){
-    height: 65%;
+#about>div:nth-child(1){
+    height: 50%;
     width: 40%;
     margin: auto;
 
@@ -84,66 +140,193 @@ body{
    font-size: 20px;
 }
 #about>div:nth-child(1)>h2:nth-child(2){
-    font-size: 80px;
+    font-size: 70px;
  }
  #about>div:nth-child(1)>h2:nth-child(3){
     font-size: 40px;
  }
-#footer {
-    width: 100%;
-    height: 350px;
-    display: flex;
-    margin-bottom: -10px;
-    background-color: rgb(43, 134, 132);
+#about button:hover{
+    transition: all 0.3s ease;
+
 }
 
-.content{
+
+#download-resume{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  border: 1px solid rgb(6, 118, 75);
+  width: 90px;
+  align-items: center;
+  border-radius:5px;
+  color: #64FFDA;
+  background-color: transparent;
+}
+#contact>div{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    /* align-items: center; */
   }
 
-  .contact .content a {
-    width: 32%; /* <--Line added on edit */
-    max-width: 32%;
+  .contact a {
+    width: 90%; /* <--Line added on edit */
+    max-width: 90%;
     display: block;
+    margin-left: 10px;
+    margin-right: 10px;
 
   }
-  .contact a:nth-child(1) img {
-    max-width: 100%;
-    height: 100%;
-    margin: auto;
-  }
-  .contact a:nth-child(1){
-    margin-left: 50px;
-  }
-  .contact a:nth-child(2) img {
+  .contact  img {
     max-width: 80%;
     height: 80%;
-    margin-top:5px;
+    margin: auto;
   }
+ 
+  
   #download-resume{
  margin-left: 45%;
  margin-top: 10px;
+ border-radius: 0 10px 0 px;
+ height: 40px;
+ width: 15%;
   }
+  .aboutMe{
+    border: 1px solid rgb(6, 118, 75);
+    height: auto;
+    width: 70%;
+    margin: auto;
+    margin-top:  50px;
+background-color:#092637;
+padding:0 5% 2% 5%;
+color: #8892B0;
+font: size 18px SFMONO;
+border-radius: 0 30px 30px 30px ;
+
+  }
+  .aboutMe u{
+ font-size: 40px;
+ 
+  }
+  .aboutMe>div:nth-child(1){
+    display: flex;
+    width: 20%;
+    height: auto;
+    align-items: center;
+    border-bottom: #CDDAFF;
+     }
+  .aboutMe img{
+    width:15%;
+    height:auto;
+   
+     }
+ 
 /* For Tablet View */
-@media screen and (min-device-width: 450px)
-and (max-device-width: 780px) {
+@media screen and (min-device-width: 450px) and (max-device-width: 780px) {
+  #nav-menu {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    padding-left: 2%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    color: #ffffff;
+  }
+  .tabs {
+    display:flex;
+    width: 90%;
+    flex-direction: row;
+    margin-right: 50px;
+  }
   
-#navbar{
-    height: 50px;
+  .tabs > * {
+    margin: auto;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ffffff; /* Add white color for tabs */
+  }
+  #about>:nth-child(1){
+    height: auto;
+    width: 10%;
+    margin: auto;
+
+
+}
+#about>:nth-child(2){
+  height: auto;
+  width: 20%;
+  margin: auto;
+
+
+}
+#about>:nth-child(2)>img{
+  width: 200px;
+  margin: auto;
+
+
 }
 }
- 
- 
+
 /* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 320px) and (max-device-width: 700px) {
-    .tabs{ 
-        display: none;
-        visibility: hidden;
-       opacity:0;
-    }
-    .tabs>div{
-     margin: auto;
-    }
+@media screen and (min-device-width: 320px) and (max-device-width: 700px) {
+  #nav-menu {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    padding-left: 2%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    color: #ffffff;
+  }
+  .tabs {
+    display:flex;
+    width: 90%;
+    flex-direction: row;
+    margin-right: 50px;
+  }
+  
+  .tabs > * {
+    margin: auto;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ffffff; /* Add white color for tabs */
+  }
+  #about>:nth-child(1){
+    height: auto;
+    width: 10%;
+    margin: auto;
+
+
+}
+#about>:nth-child(2){
+  height: auto;
+  width: 20%;
+  margin: auto;
+
+
+}
+#about>:nth-child(2)>img{
+  width: 200px;
+  margin: auto;
+
+
+}
+
 }
  
