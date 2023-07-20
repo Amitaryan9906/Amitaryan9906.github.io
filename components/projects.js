@@ -40,6 +40,32 @@ let projects = () => {
     </div>
    
 </div>
+<div class="project">
+    <div>
+    <h3>Report</h3>
+    <img src="iconAndImages/Signup _ Hack2skill - Google Chrome 20-07-2023 11_15_00.png" class="project-screenshot">
+    </div>
+    
+    <div>
+    <h2 class="project-title">Hack2Skill</h2>
+    <p>The objective of this project is to conduct testing for the Hack2Skill web application, focusing on the UI/UX design and overall functionality(Manual). The testing will be performed using the Google sheet.</p>
+    <a href="https://docs.google.com/spreadsheets/d/1NQssy0pDmBXmA3n3e4IqSmSypfpKBxgxVwNwf5SOAHI/edit?usp=sharing" class="project-link" target="_blank">View Project</a>
+    </div>
+   
+</div>
+<div class="project">
+    <div>
+    <h3>Report</h3>
+    <img src="iconAndImages/Assess.png" class="project-screenshot">
+    </div>
+    
+    <div>
+    <h2 class="project-title">Hack2Skill</h2>
+    <p>The objective of this project is to conduct testing for the Masai Assess web application, focusing on the UI/UX design and overall functionality. The testing will be performed using the Jira, Selenium, pytest, python, Google sheet.</p>
+    <a href="https://github.com/Amitaryan9906/Assess-Platform-Testing" class="project-link" target="_blank">View Project</a>
+    </div>
+   
+</div>
 <a href="https://github.com/Amitaryan9906?tab=repositories">View more project</a>`;
 };
 
