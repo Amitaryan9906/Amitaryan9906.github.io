@@ -60,7 +60,7 @@ let projects = () => {
     </div>
     
     <div>
-    <h2 class="project-title">Hack2Skill</h2>
+    <h2 class="project-title">Masai Assess</h2>
     <p>The objective of this project is to conduct testing for the Masai Assess web application, focusing on the UI/UX design and overall functionality. The testing will be performed using the Jira, Selenium, pytest, python, Google sheet.</p>
     <a href="https://github.com/Amitaryan9906/Assess-Platform-Testing" class="project-link" target="_blank">View Project</a>
     </div>
