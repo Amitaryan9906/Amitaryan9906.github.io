@@ -6,7 +6,7 @@ const navbar = () => {
           <a href="#skills" class="nav-link-skills">Skills</a>
           <a href="#projects" class="nav-link-projects">Projects</a>
           <a href="#footer" class="nav-link-contact">Contact</a>
-          <a class="nav-link-resume" href="https://drive.google.com/file/d/1lTodqx2oNR7szw4S9ly0oYZkor-f9efN/view?usp=drive_link" download>Resume</a>
+          <a class="nav-link-resume" href="https://drive.google.com/file/d/1lTodqx2oNR7szw4S9ly0oYZkor-f9efN/view?usp=drive_link" target="_blank" download>Resume</a>
       </div>`;
   };
   

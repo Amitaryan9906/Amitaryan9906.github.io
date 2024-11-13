@@ -48,13 +48,15 @@ downloadResume.addEventListener("mouseenter", () => {
 
 downloadResume.addEventListener('click',()=>{
 console.log("Download");
-const fileUrl = 'Resume/Amit_Das_Resume.pdf';
+const fileUrl = 'resume/Amit_Das_Resume.pdf';
 const link = document.createElement('a');
 link.href = fileUrl;
-link.download = 'Amit_ Das_Resume.pdf';
+link.download = 'Amit_Das_Resume.pdf';
 document.body.appendChild(link);
 link.click();
 document.body.removeChild(link);
+
+alert("Your resume is downloading!");
 });
 
 
